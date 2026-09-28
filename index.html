@@ -3084,7 +3084,7 @@ document.addEventListener('click',e=>{
 // ══════════════════════════════════════════════════════════
 const CLOUD_URL       = 'https://script.google.com/macros/s/AKfycbxkEFbQscMoRdK9IwANPcgv2PKPbJEHaL_zKce_CWI2DIxeT2euxq0eExoTFFD8LxY/exec';     // ← paste your Apps Script Web App URL here (ends with /exec)
 const CLOUD_TOKEN     = '';     // optional — must equal TOKEN inside the Apps Script
-const CLOUD_SEND_NAME = false;  // false = player's name is NOT sent (anonymous ID only)
+const CLOUD_SEND_NAME = true;  // false = player's name is NOT sent (anonymous ID only)
 
 function cloudEnabled(){ return typeof CLOUD_URL==='string' && CLOUD_URL.indexOf('https://script.google.com/')===0; }
 function _uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,8); }
